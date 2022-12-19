@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<!-- project done -->
+ <!-- project done -->
+ <!-- project done -->
+
+  <section class="project">
+ 	<div class="container text-center">
+      <h2>More Than 1000 clients we served</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      tempor.</p>
+  </div>
+
+ <div class="clients container d-flex justify-content-around align-items-center text-center">
+ 	<div>
+ 		<h1 class="count">1000</h1>
+ 		<p>All Clients</p>
+
+ 	</div>
+ 	<div>
+ 		<h1 class="count">800</h1>
+ 		<p>Happy Clients</p>
+
+ 	</div>
+ 	<div>
+ 		<h1 class="count">200</h1>
+ 		<p>Advance Bookings</p>
+
+ 	</div>
+	
+ </div>
+
+ </section> 
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    
+
+</body>
+</html>
+<script>
+(function(e){"use strict";e.fn.counterUp=function(t){var n=e.extend({time:400,delay:10},t);return this.each(function(){var t=e(this),r=n,i=function(){var e=[],n=r.time/r.delay,i=t.text(),s=/[0-9]+,[0-9]+/.test(i);i=i.replace(/,/g,"");var o=/^[0-9]+$/.test(i),u=/^[0-9]+\.[0-9]+$/.test(i),a=u?(i.split(".")[1]||[]).length:0;for(var f=n;f>=1;f--){var l=parseInt(i/n*f);u&&(l=parseFloat(i/n*f).toFixed(a));if(s)while(/(\d+)(\d{3})/.test(l.toString()))l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2");e.unshift(l)}t.data("counterup-nums",e);t.text("0");var c=function(){t.text(t.data("counterup-nums").shift());if(t.data("counterup-nums").length)setTimeout(t.data("counterup-func"),r.delay);else{delete t.data("counterup-nums");t.data("counterup-nums",null);t.data("counterup-func",null)}};t.data("counterup-func",c);setTimeout(t.data("counterup-func"),r.delay)};t.waypoint(i,{offset:"100%",triggerOnce:!0})})}})(jQuery);    jQuery(document).ready(function($) {
+    $('.count').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
+</script>
